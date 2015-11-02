@@ -69,7 +69,7 @@ public class Post extends Fragment {
 
         //Define o Adapter
         list.setAdapter(adapterListView);
-        //Cor quando a lista é selecionada para ralagem.
+        //Cor quando a lista é selecionada para rolagem.
         list.setCacheColorHint(Color.TRANSPARENT);
     }
 

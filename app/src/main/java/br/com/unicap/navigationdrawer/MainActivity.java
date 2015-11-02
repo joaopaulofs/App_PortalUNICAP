@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
 
+import br.com.unicap.navigationdrawer.evento.Evento;
 import br.com.unicap.navigationdrawer.post.Post;
 
 public class MainActivity extends AppCompatActivity

@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name="br.com.unicap.navigationdrawer.post.DetailsActivityPost" />
+        <activity android:name="br.com.unicap.navigationdrawer.evento.DetailsActivityEvento" />
     </application>
 
 </manifest>
