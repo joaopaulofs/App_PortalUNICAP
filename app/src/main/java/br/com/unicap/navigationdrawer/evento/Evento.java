@@ -61,7 +61,7 @@ public class Evento extends Fragment {
                 "Data: 23/09/2015 (quarta-feira)\n" +
                 "Horário: 19h\n" +
                 "Realização: Curso de Ciência da Computação da Universidade Católica de Pernambuco\n" +
-                "OBS: Não é necessária inscrição prévia, todos são bem-vindos e o acesso à sala se dará por ordem de chegada até a sua capacidade máxima estar esgotada.", "Posted by: Marcio Bueno | 19 de Setembro de 2015");
+                "OBS: Não é necessária inscrição prévia, todos são bem-vindos e o acesso à sala se dará por ordem de chegada até a sua capacidade máxima estar esgotada.", "Posted by: marcio Bueno | 19 de Setembro de 2015");
         ItemListViewEvento item2 = new ItemListViewEvento("Palestra Mensal de Ciência da Computação", -1, "Prezados alunos e professores,\n" +
                 "\n" +
                 "Retomando as nossas palestras mensais, segue informação sobre a palestra de Agosto:\n" +
@@ -72,7 +72,7 @@ public class Evento extends Fragment {
                 "Data: 25/08/2015 (terça-feira)\n" +
                 "Horário: 19h\n" +
                 "Realização: Curso de Ciência da Computação da Universidade Católica de Pernambuco\n" +
-                "OBS: Não é necessária inscrição prévia, todos são bem-vindos e o acesso à sala se dará por ordem de chegada até a sua capacidade máxima estar esgotada", "Posted by: Marcio Bueno | 20 de Agosto de 2015");
+                "OBS: Não é necessária inscrição prévia, todos são bem-vindos e o acesso à sala se dará por ordem de chegada até a sua capacidade máxima estar esgotada", "Posted by: marcio Bueno | 20 de Agosto de 2015");
         itens.add(item1);
         itens.add(item2);
 

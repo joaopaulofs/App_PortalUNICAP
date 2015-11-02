@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:3:5-45
 		INJECTED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.x
 		INJECTED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:5:5-21:19
+ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:5:5-22:19
 MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
 	android:label
@@ -45,10 +45,14 @@ activity#br.com.unicap.navigationdrawer.post.DetailsActivityPost
 ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:19:9-71
 	android:name
 		ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:19:19-59
-activity#br.com.unicap.navigationdrawer.evento.DetailsActivityEvento
-ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:20:9-75
+activity#br.com.unicap.navigationdrawer.professor.DetailsActivityProfessor
+ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:20:9-81
 	android:name
-		ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:20:19-63
+		ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:20:19-69
+activity#br.com.unicap.navigationdrawer.evento.DetailsActivityEvento
+ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:21:9-75
+	android:name
+		ADDED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml:21:19-63
 uses-sdk
 INJECTED from C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43

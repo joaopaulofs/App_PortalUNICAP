@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".post.DetailsActivityPost"></activity>
+        <activity android:name=".professor.DetailsActivityProfessor"></activity>
         <activity android:name=".evento.DetailsActivityEvento"></activity>
     </application>
 
