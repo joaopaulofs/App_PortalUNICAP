@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Portal C3 Unicap</string>
+
+    <string name="title_section1">Postagens</string>
+    <string name="title_section2">Disciplinas</string>
+    <string name="title_section3">Professores</string>
+    <string name="title_section4">Eventos</string>
+    <string name="title_section5">Sobre</string>
+
+
+    <string-array name="sections">
+        <item>"      Postagens"</item>
+        <item>"      Disciplinas"</item>
+        <item>"      Professores"</item>
+        <item>"      Eventos"</item>
+        <item>"      Sobre"</item>
+    </string-array>
+    <string-array name="section_titles">
+        <item>Section T1</item>
+        <item>Section T2</item>
+        <item>Section T3</item>
+        <item>Section T4</item>
+        <item>Section T5</item>
+    </string-array>
+    <string-array name="sections_icons">
+        <item>@drawable/ic_post</item>
+        <item>@drawable/ic_disciplina</item>
+        <item>@drawable/ic_professor</item>
+        <item>@drawable/ic_evento</item>
+        <item>@drawable/ic_sobre</item>
+    </string-array>
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
