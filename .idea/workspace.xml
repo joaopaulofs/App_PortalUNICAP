@@ -10,57 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15ec466-b60a-41cf-ab5b-948e8b662f21" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/AdapterListViewEvento.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/DetailsActivityEvento.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/ItemListViewEvento.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/details_activity_post.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_listview_post.xml" />
-      <change type="DELETED" beforePath="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\classes\debug\br\com\unicap\navigationdrawer\Evento.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\res\merged\debug\layout\details_activity.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\res\merged\debug\layout\item_listview.xml" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\java\br\com\unicap\navigationdrawer\Evento.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/Evento.java" />
-      <change type="MOVED" beforePath="C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\res\layout\details_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/details_activity_evento.xml" />
-      <change type="MOVED" beforePath="C:\Users\Joao\Desktop\NavigationDrawer\app\src\main\res\layout\item_listview.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_listview_evento.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/post/AdapterListViewPost.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/post/AdapterListViewPost.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/post/DetailsActivityPost.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/post/DetailsActivityPost.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/Disciplina.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/Disciplina.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/NavigationDrawerFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/NavigationDrawerFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/post/Post.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/post/Post.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/Professor.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/Professor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/Sobre.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/br/com/unicap/navigationdrawer/Sobre.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/post/AdapterListViewPost.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/post/AdapterListViewPost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/post/DetailsActivityPost.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/post/DetailsActivityPost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/post/Post.java" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/post/Post.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/br/com/unicap/navigationdrawer/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/br/com/unicap/navigationdrawer/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/details_activity_evento.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/details_activity_evento.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/details_activity_evento.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/details_activity_evento.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/details_activity_post.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/details_activity_post.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/details_activity_post.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/details_activity_post.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/evento.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/evento.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/evento.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/evento.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/post.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/post.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/post.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/post.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NavigationDrawer.iws" />
@@ -139,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Evento.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Evento.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/Evento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6365796">
-              <caret line="63" column="200" selection-start-line="63" selection-start-column="200" selection-end-line="63" selection-end-column="200" />
+            <state vertical-scroll-proportion="-49.24138">
+              <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#952#1435#0" expanded="true" />
@@ -153,11 +117,50 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="fragment_navigation_drawer.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_navigation_drawer.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.9310346">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details_activity_post.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_activity_post.xml">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="post.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/post.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1724138">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
+            <state vertical-scroll-proportion="-5.862069">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evento.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/evento.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4038005">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -1608,7 +1611,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/post.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main_actionbar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/ItemListViewPost.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/Post.java" />
@@ -1619,14 +1621,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/post/DetailsActivityPost.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/ItemListViewEvento.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/evento.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/post/Post.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/DetailsActivityEvento.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/AdapterListViewEvento.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_listview_evento.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_activity_evento.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/Evento.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_activity_evento.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/details_activity_post.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/post.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/evento.xml" />
       </list>
     </option>
   </component>
@@ -2343,17 +2347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_activity_post.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46875">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.251816">
@@ -2376,17 +2369,6 @@
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/post.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1724138">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/post/ItemListViewPost.java">
@@ -2421,17 +2403,6 @@
           <caret line="780" column="0" selection-start-line="780" selection-start-column="0" selection-end-line="780" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/evento.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48456058">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/ItemListViewEvento.java">
@@ -2474,17 +2445,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_activity_evento.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/DetailsActivityEvento.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37555555">
@@ -2503,14 +2463,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/unicap/navigationdrawer/evento/Evento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6365796">
-          <caret line="63" column="200" selection-start-line="63" selection-start-column="200" selection-end-line="63" selection-end-column="200" />
+        <state vertical-scroll-proportion="-49.24138">
+          <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#952#1435#0" expanded="true" />
             <element signature="e#1434#1435#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_navigation_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9310346">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_activity_evento.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/details_activity_post.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/post.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.862069">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/evento.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4038005">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
