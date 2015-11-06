@@ -3,9 +3,9 @@ package br.com.unicap.navigationdrawer.post;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+import br.com.unicap.navigationdrawer.model.Post;
 import br.com.unicap.navigationdrawer.R;
 
 /**
@@ -25,16 +25,16 @@ public class DetailsActivityPost extends ActionBarActivity {
 
         long idSelected = getIntent().getLongExtra("ID", 0);
         long positionSelected = getIntent().getIntExtra("POSITION", 0);
-        ItemListViewPost item = (ItemListViewPost) getIntent().getSerializableExtra("OBJETO");
+        Post item = (Post) getIntent().getSerializableExtra("OBJETO");
 
-        TextView titulo = ((TextView) findViewById(R.id.tituloPost));
-        titulo.setText(item.getTituloPost());
-        ImageView image = ((ImageView) findViewById(R.id.imagePost));
-        image.setImageResource(item.getImagePost());
+        TextView titulo = ((TextView) findViewById(R.id.postTitulo));
+        titulo.setText(item.getPostTitulo());
+//        ImageView image = ((ImageView) findViewById(R.id.imagePost));
+//        image.setImageResource(item.getImagePost());
         TextView info = ((TextView) findViewById(R.id.infoPost));
-        info.setText(item.getInfoPost());
+        info.setText(item.getPostDescricao());
         TextView dados = ((TextView) findViewById(R.id.dadosPost));
-        dados.setText(item.getDadosPost());
+        dados.setText(item.getPostData());
     }
 
     @Override

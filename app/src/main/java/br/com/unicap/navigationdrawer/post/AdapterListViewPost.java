@@ -5,12 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
+import br.com.unicap.navigationdrawer.model.Post;
 import br.com.unicap.navigationdrawer.R;
 
 /**
@@ -19,9 +19,10 @@ import br.com.unicap.navigationdrawer.R;
 public class AdapterListViewPost extends BaseAdapter  implements Serializable
 {
     private LayoutInflater mInflater;
-    private ArrayList<ItemListViewPost> itens;
+    private ArrayList<Post> itens;
 
-    public AdapterListViewPost(Context context, ArrayList<ItemListViewPost> itens)
+
+    public AdapterListViewPost(Context context, ArrayList<Post> itens)
     {
         //Itens que preencheram o listview
         this.itens = itens;
@@ -49,7 +50,7 @@ public class AdapterListViewPost extends BaseAdapter  implements Serializable
      * @param position
      * @return
      */
-    public ItemListViewPost getItem(int position)
+    public Post getItem(int position)
     {
         return itens.get(position);
     }
@@ -68,21 +69,21 @@ public class AdapterListViewPost extends BaseAdapter  implements Serializable
     public View getView(int position, View view, ViewGroup parent)
     {
         //Pega o item de acordo com a posição.
-        ItemListViewPost item = itens.get(position);
+        Post item = itens.get(position);
         //infla o layout para podermos preencher os dados
         view = mInflater.inflate(R.layout.item_listview_post, null);
 
         //atravez do layout pego pelo LayoutInflater, pegamos cada id relacionado
         //ao item e definimos as informações.
-        ((TextView) view.findViewById(R.id.tituloPost)).setText(item.getTituloPost());
-        ImageView image = (ImageView) view.findViewById(R.id.imagePost);
-        ((ImageView) view.findViewById(image.getId())).setImageResource(item.getImagePost());
-        if(item.getInfoPost().length() > 235) {
-            ((TextView) view.findViewById(R.id.infoPost)).setText(item.getInfoPost().substring(0, 235) + "...");
+        ((TextView) view.findViewById(R.id.tituloPost)).setText(item.getPostTitulo());
+//        ImageView image = (ImageView) view.findViewById(R.id.imagePost);
+//        ((ImageView) view.findViewById(image.getId())).setImageResource(item.getImagePost());
+        if(item.getPostDescricao().length() > 235) {
+            ((TextView) view.findViewById(R.id.infoPost)).setText(item.getPostDescricao().substring(0, 235) + "...");
         } else {
-            ((TextView) view.findViewById(R.id.infoPost)).setText(item.getInfoPost());
+            ((TextView) view.findViewById(R.id.infoPost)).setText(item.getPostDescricao());
         }
-        ((TextView) view.findViewById(R.id.dadosPost)).setText(item.getDadosPost());
+        ((TextView) view.findViewById(R.id.dadosPost)).setText(item.getPostData());
 
         return view;
     }

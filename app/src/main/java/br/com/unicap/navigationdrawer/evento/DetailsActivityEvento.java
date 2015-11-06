@@ -3,9 +3,9 @@ package br.com.unicap.navigationdrawer.evento;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+import br.com.unicap.navigationdrawer.model.Evento;
 import br.com.unicap.navigationdrawer.R;
 
 /**
@@ -25,16 +25,16 @@ public class DetailsActivityEvento extends ActionBarActivity {
 
         long idSelected = getIntent().getLongExtra("ID", 0);
         long positionSelected = getIntent().getIntExtra("POSITION", 0);
-        ItemListViewEvento item = (ItemListViewEvento) getIntent().getSerializableExtra("OBJETO");
+        Evento item = (Evento) getIntent().getSerializableExtra("OBJETO");
 
         TextView titulo = ((TextView) findViewById(R.id.tituloEvento));
-        titulo.setText(item.getTituloEvento());
-        ImageView image = ((ImageView) findViewById(R.id.imageEvento));
-        image.setImageResource(item.getImageEvento());
+        titulo.setText(item.getEventoTitulo());
+//        ImageView image = ((ImageView) findViewById(R.id.imageEvento));
+//        image.setImageResource(item.getEventoImagens());
         TextView info = ((TextView) findViewById(R.id.infoEvento));
-        info.setText(item.getInfoEvento());
+        info.setText(item.getEventoDescricao());
         TextView dados = ((TextView) findViewById(R.id.dadosEvento));
-        dados.setText(item.getDadosEvento());
+        dados.setText(item.getEventoCriador() + " / " + item.getEventoData());
     }
 
     @Override

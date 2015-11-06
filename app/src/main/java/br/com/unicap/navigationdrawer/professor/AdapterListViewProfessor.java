@@ -5,13 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
 import br.com.unicap.navigationdrawer.R;
+import br.com.unicap.navigationdrawer.model.Professor;
 
 /**
  * Created by Joao on 18/10/2015.
@@ -19,9 +19,9 @@ import br.com.unicap.navigationdrawer.R;
 public class AdapterListViewProfessor extends BaseAdapter  implements Serializable
 {
     private LayoutInflater mInflater;
-    private ArrayList<ItemListViewProfessor> itens;
+    private ArrayList<Professor> itens;
 
-    public AdapterListViewProfessor(Context context, ArrayList<ItemListViewProfessor> itens)
+    public AdapterListViewProfessor(Context context, ArrayList<Professor> itens)
     {
         //Itens que preencheram o listview
         this.itens = itens;
@@ -49,7 +49,7 @@ public class AdapterListViewProfessor extends BaseAdapter  implements Serializab
      * @param position
      * @return
      */
-    public ItemListViewProfessor getItem(int position)
+    public Professor getItem(int position)
     {
         return itens.get(position);
     }
@@ -68,17 +68,17 @@ public class AdapterListViewProfessor extends BaseAdapter  implements Serializab
     public View getView(int position, View view, ViewGroup parent)
     {
         //Pega o item de acordo com a posição.
-        ItemListViewProfessor item = itens.get(position);
+        Professor item = itens.get(position);
         //infla o layout para podermos preencher os dados
         view = mInflater.inflate(R.layout.item_listview_professor, null);
 
         //atravez do layout pego pelo LayoutInflater, pegamos cada id relacionado
         //ao item e definimos as informações.
-        ((TextView) view.findViewById(R.id.nome)).setText(item.getNome());
-        ImageView imagem = (ImageView) view.findViewById(R.id.imagem);
-        ((ImageView) view.findViewById(imagem.getId())).setImageResource(item.getImagem());
-        ((TextView) view.findViewById(R.id.cargo)).setText(item.getCargo());
-        ((TextView) view.findViewById(R.id.email)).setText(item.getEmail());
+        ((TextView) view.findViewById(R.id.nome)).setText(item.getUsuarioNome());
+//        ImageView imagem = (ImageView) view.findViewById(R.id.imagem);
+//        ((ImageView) view.findViewById(imagem.getId())).setImageResource(item.getUsuarioFoto());
+        ((TextView) view.findViewById(R.id.cargo)).setText(item.getUsuarioCargo());
+        ((TextView) view.findViewById(R.id.email)).setText(item.getUsuarioEmail());
 
         return view;
     }

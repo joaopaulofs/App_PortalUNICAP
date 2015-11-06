@@ -3,10 +3,10 @@ package br.com.unicap.navigationdrawer.professor;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import br.com.unicap.navigationdrawer.R;
+import br.com.unicap.navigationdrawer.model.Professor;
 
 /**
  * Created by Joao on 02/11/2015.
@@ -25,16 +25,16 @@ public class DetailsActivityProfessor extends ActionBarActivity {
 
         long idSelected = getIntent().getLongExtra("ID", 0);
         long positionSelected = getIntent().getIntExtra("POSITION", 0);
-        ItemListViewProfessor item = (ItemListViewProfessor) getIntent().getSerializableExtra("OBJETO");
+        Professor item = (Professor) getIntent().getSerializableExtra("OBJETO");
 
         TextView nome = ((TextView) findViewById(R.id.nome));
-        nome.setText(item.getNome());
-        ImageView imagem = ((ImageView) findViewById(R.id.imagem));
-        imagem.setImageResource(item.getImagem());
+        nome.setText(item.getUsuarioNome());
+//        ImageView imagem = ((ImageView) findViewById(R.id.imagem));
+//        imagem.setImageResource(item.getUsuarioFoto());
         TextView cargo = ((TextView) findViewById(R.id.cargo));
-        cargo.setText(item.getCargo());
+        cargo.setText(item.getUsuarioCargo());
         TextView email = ((TextView) findViewById(R.id.email));
-        email.setText(item.getEmail());
+        email.setText(item.getUsuarioEmail());
     }
 
     @Override

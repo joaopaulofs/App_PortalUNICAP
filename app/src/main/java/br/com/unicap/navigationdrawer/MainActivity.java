@@ -10,9 +10,10 @@ import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
 
 import br.com.unicap.navigationdrawer.disciplina.Disciplina;
-import br.com.unicap.navigationdrawer.evento.Evento;
-import br.com.unicap.navigationdrawer.post.Post;
-import br.com.unicap.navigationdrawer.professor.Professor;
+import br.com.unicap.navigationdrawer.evento.EventListView;
+import br.com.unicap.navigationdrawer.post.PostListView;
+import br.com.unicap.navigationdrawer.professor.ProfessorListView;
+import br.com.unicap.navigationdrawer.sobre.Sobre;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity
             case 0:
                 //Postagens
                 mTitle = getString(R.string.title_section1);
-                fragment = new Post();
+                fragment = new PostListView();
                 break;
             case 1:
                 //Disciplinas
@@ -64,12 +65,12 @@ public class MainActivity extends AppCompatActivity
             case 2:
                 //Professores
                 mTitle = getString(R.string.title_section3);
-                fragment = new Professor();
+                fragment = new ProfessorListView();
                 break;
             case 3:
                 //Eventos
                 mTitle = "Eventos";
-                fragment = new Evento();
+                fragment = new EventListView();
                 break;
             case 4:
                 //Sobre
