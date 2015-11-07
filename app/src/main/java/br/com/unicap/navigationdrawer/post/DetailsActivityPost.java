@@ -27,7 +27,7 @@ public class DetailsActivityPost extends ActionBarActivity {
         long positionSelected = getIntent().getIntExtra("POSITION", 0);
         Post item = (Post) getIntent().getSerializableExtra("OBJETO");
 
-        TextView titulo = ((TextView) findViewById(R.id.postTitulo));
+        TextView titulo = ((TextView) findViewById(R.id.tituloPost));
         titulo.setText(item.getPostTitulo());
 //        ImageView image = ((ImageView) findViewById(R.id.imagePost));
 //        image.setImageResource(item.getImagePost());

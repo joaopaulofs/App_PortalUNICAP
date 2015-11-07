@@ -85,4 +85,5 @@ public class EventListView extends Fragment {
         //Cor quando a lista é selecionada para rolagem.
         list.setCacheColorHint(Color.TRANSPARENT);
     }
+
 }

@@ -75,7 +75,7 @@ public class AdapterListViewPost extends BaseAdapter  implements Serializable
 
         //atravez do layout pego pelo LayoutInflater, pegamos cada id relacionado
         //ao item e definimos as informações.
-        ((TextView) view.findViewById(R.id.tituloPost)).setText(item.getPostTitulo());
+        ((TextView) view.findViewById(R.id.postTitulo)).setText(item.getPostTitulo());
 //        ImageView image = (ImageView) view.findViewById(R.id.imagePost);
 //        ((ImageView) view.findViewById(image.getId())).setImageResource(item.getImagePost());
         if(item.getPostDescricao().length() > 235) {

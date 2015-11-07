@@ -40,4 +40,4 @@
             android:id="@+id/email"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
-</ScrollView><!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/layout/details_activity_professor.xml -->
+</ScrollView><!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/layout/details_activity_professor.xml -->
