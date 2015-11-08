@@ -3,7 +3,16 @@ package br.com.unicap.navigationdrawer.professor;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import br.com.unicap.navigationdrawer.R;
 import br.com.unicap.navigationdrawer.model.Professor;
@@ -12,11 +21,14 @@ import br.com.unicap.navigationdrawer.model.Professor;
  * Created by Joao on 02/11/2015.
  */
 public class DetailsActivityProfessor extends ActionBarActivity {
+    Professor professores = new Professor();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.details_activity_professor);
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -26,15 +38,11 @@ public class DetailsActivityProfessor extends ActionBarActivity {
         long idSelected = getIntent().getLongExtra("ID", 0);
         long positionSelected = getIntent().getIntExtra("POSITION", 0);
         Professor item = (Professor) getIntent().getSerializableExtra("OBJETO");
+        sendRequestBuscaProfessores(item.getUsuarioMatricula());
 
-        TextView nome = ((TextView) findViewById(R.id.nome));
-        nome.setText(item.getUsuarioNome());
-//        ImageView imagem = ((ImageView) findViewById(R.id.imagem));
-//        imagem.setImageResource(item.getUsuarioFoto());
-        TextView cargo = ((TextView) findViewById(R.id.cargo));
-        cargo.setText(item.getUsuarioCargo());
-        TextView email = ((TextView) findViewById(R.id.email));
-        email.setText(item.getUsuarioEmail());
+
+
+
     }
 
     @Override
@@ -50,4 +58,53 @@ public class DetailsActivityProfessor extends ActionBarActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    private void MostrarProfessor(){
+        TextView nome = ((TextView) findViewById(R.id.professorBuscaNome));
+        nome.setText(professores.getUsuarioNome());
+        TextView cargo = ((TextView) findViewById(R.id.professorBuscaCargo));
+        cargo.setText(professores.getUsuarioCargo());
+        TextView email = ((TextView) findViewById(R.id.professorBuscaEmail));
+        email.setText(professores.getUsuarioEmail());
+        TextView lattesurl = ((TextView) findViewById(R.id.professorBuscaLattesUrl));
+        lattesurl.setText(professores.getUsuarioLattesURL());
+        TextView matricula = ((TextView) findViewById(R.id.professorBuscaMatricula));
+        matricula.setText(professores.getUsuarioMatricula());
+
+
+    }
+
+    private void sendRequestBuscaProfessores(String matricula){
+        String  url = String.format("http://sm.c3.unicap.br/portalC3/api/usuarios/");
+        url=url+matricula;
+
+        StringRequest teste = new StringRequest(Request.Method.GET,url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        showJSONProfessorBusca(response);
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                        Toast.makeText(DetailsActivityProfessor.this, error.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                });
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(teste);
+    }
+    private void showJSONProfessorBusca(String json) {
+
+        JsonProfessorBusca pj = new JsonProfessorBusca(json);
+
+        professores= pj.JsonProfessorBusca();
+        MostrarProfessor();
+
+    }
+
+
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="section_titles">
         <item>Section T1</item>
@@ -23,7 +23,7 @@
         <item>@drawable/ic_evento</item>
         <item>@drawable/ic_sobre</item>
     </string-array>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -76,7 +76,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/values/color.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="nliveo_black">#000000</color>
     <color name="nliveo_black_light">#222222</color>
@@ -118,7 +118,7 @@
     <color name="nliveo_teal_colorPrimaryDark">#00796B</color>
     <color name="nliveo_transparent">#00000000</color>
     <color name="nliveo_white">#ffffff</color>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
@@ -225,11 +225,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -240,10 +240,10 @@
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="navigation_drawer_width">280dp</dimen>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
@@ -280,35 +280,35 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">Portal C3 Unicap</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_section1">Postagens</string>
     <string name="title_section2">Disciplinas</string>
     <string name="title_section3">Professores</string>
     <string name="title_section4">Eventos</string>
     <string name="title_section5">Sobre</string>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="android:textColor">@color/nliveo_black</item>
     </style>
-    <!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>

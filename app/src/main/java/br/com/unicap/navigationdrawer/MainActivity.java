@@ -9,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
 
-import br.com.unicap.navigationdrawer.disciplina.Disciplina;
+import br.com.unicap.navigationdrawer.disciplina.DisciplinaListView;
 import br.com.unicap.navigationdrawer.evento.EventListView;
 import br.com.unicap.navigationdrawer.post.PostListView;
 import br.com.unicap.navigationdrawer.professor.ProfessorListView;
@@ -53,14 +53,13 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         switch (position) {
             case 0:
-                //Postagens
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.app_name);
                 fragment = new PostListView();
                 break;
             case 1:
                 //Disciplinas
                 mTitle = getString(R.string.title_section2);
-                fragment = new Disciplina();
+                fragment = new DisciplinaListView();
                 break;
             case 2:
                 //Professores
@@ -126,5 +125,7 @@ public class MainActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
 }

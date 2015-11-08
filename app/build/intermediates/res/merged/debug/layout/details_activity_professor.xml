@@ -8,7 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:id="@+id/txt">
 
         <ImageView
             android:layout_width="200dp"
@@ -20,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/nome"
+            android:id="@+id/professorBuscaNome"
             android:layout_gravity="center_horizontal" />
 
         <TextView
@@ -28,7 +29,7 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/cargo"
+            android:id="@+id/professorBuscaCargo"
             android:layout_gravity="center_horizontal" />
 
         <TextView
@@ -37,7 +38,25 @@
             android:textSize="15dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/nliveo_blue_colorAccent"
-            android:id="@+id/email"
+            android:id="@+id/professorBuscaEmail"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/nliveo_blue_colorAccent"
+            android:id="@+id/professorBuscaMatricula"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/nliveo_blue_colorAccent"
+            android:id="@+id/professorBuscaLattesUrl"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
-</ScrollView><!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/layout/details_activity_professor.xml -->
+</ScrollView><!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/layout/details_activity_professor.xml -->

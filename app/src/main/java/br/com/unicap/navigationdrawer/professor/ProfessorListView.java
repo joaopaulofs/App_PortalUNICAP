@@ -9,11 +9,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import java.util.ArrayList;
 
 import br.com.unicap.navigationdrawer.R;
+import br.com.unicap.navigationdrawer.model.Post;
 import br.com.unicap.navigationdrawer.model.Professor;
+import br.com.unicap.navigationdrawer.post.JsonPosts;
 
 /**
  * Created by Joao on 13/09/2015.
@@ -23,16 +33,16 @@ public class ProfessorListView extends Fragment {
     ListView list;
     private AdapterListViewProfessor adapterListView;
     private ArrayList<Professor> itens;
-
+    private Professor[] professores;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.professor, container, false);
+        View view = inflater.inflate(R.layout.list_view, container, false);
 
         list = (ListView) view.findViewById(R.id.list);
 
-        createListView();
+        sendRequestProfessores();
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -51,12 +61,17 @@ public class ProfessorListView extends Fragment {
     private void createListView()
     {
         itens = new ArrayList<Professor>();
-        Professor item1 = new Professor("Almir Pires", "ProfessorListView", "almir@c3.unicap.br", "", "", "", "", "", "", "");
-        Professor item2 = new Professor("Robson Lins", "ProfessorListView", "robson@c3.unicap.br", "", "", "", "", "", "", "");
-        Professor item3 = new Professor("Marcio Bueno", "Coordenador", "marcio@c3.unicap.br", "", "", "", "", "", "", "");
-        itens.add(item1);
-        itens.add(item2);
-        itens.add(item3);
+        int tamanho = getSize(professores);
+
+        if (professores!=null) {
+            for (int i = 0; i < tamanho; i++) {
+                Professor item = new Professor(professores[i].getUsuarioMatricula() != null ? professores[i].getUsuarioMatricula() : ""
+                        , professores[i].getUsuarioEmail()!= null ? professores[i].getUsuarioEmail() : ""
+                        , professores[i].getUsuarioCargo()!= null ? professores[i].getUsuarioCargo() : ""
+                        , professores[i].getUsuarioNome()!= null ? professores[i].getUsuarioNome() : "");
+                itens.add(item);
+            }
+        }
 
         //Cria o adapter
         adapterListView = new AdapterListViewProfessor(this.getActivity(), itens);
@@ -66,4 +81,46 @@ public class ProfessorListView extends Fragment {
         //Cor quando a lista é selecionada para rolagem.
         list.setCacheColorHint(Color.TRANSPARENT);
     }
+    private void sendRequestProfessores(){
+        String  url = String.format("http://sm.c3.unicap.br/portalC3/api/usuarios?startNum=0");
+    professores= new Professor[2000];
+        StringRequest teste = new StringRequest(Request.Method.GET,url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        showJSONProfessores(response);
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                        Toast.makeText(getActivity(), error.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                });
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this.getActivity());
+        requestQueue.add(teste);
+    }
+    private void showJSONProfessores(String json) {
+
+        JsonProfessores pj = new JsonProfessores(json);
+
+        professores= pj.JsonProfessores();
+        createListView();
+    }
+
+
+    public int getSize(Professor[] professores){
+        int tamanho=0;
+        for (int i=0;i<professores.length;i++){
+            if (professores[i]==null)
+                return i;
+        }
+        return tamanho;
+    }
+
 }
+
+
