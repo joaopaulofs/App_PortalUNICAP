@@ -23,6 +23,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 import br.com.unicap.navigationdrawer.MainActivity;
 import br.com.unicap.navigationdrawer.evento.AdapterListViewEvento;
@@ -36,7 +38,7 @@ public class PostListView extends Fragment {
 
     ListView list;
     private AdapterListViewPost adapterListView;
-    private ArrayList<Post> itens;
+    private ArrayList<Post> itens = new ArrayList<Post>();
 
     private Post[] postagem = new Post[20];
     private JSONArray posts = null;
@@ -50,7 +52,7 @@ public class PostListView extends Fragment {
         View view = inflater.inflate(R.layout.list_view_maior_espacamento, container, false);
 
         list = (ListView) view.findViewById(R.id.list);
-        sendRequestPosts();
+        sendRequestPosts(0);
 
         //createListView();
 
@@ -65,12 +67,22 @@ public class PostListView extends Fragment {
             }
         });
 
+        list.setOnScrollListener(new AdapterListViewPost() {
+            @Override
+            public void loadMore(int page, int totalItemsCount) {
+//                list = loader.loadData();
+//                dataList.addAll(newData);
+//                adapter.notifyDataSetChanged();
+                sendRequestPosts(totalItemsCount);
+            }
+
+        });
+
         return view;
     }
 
     private void createListView() {
 
-        itens = new ArrayList<Post>();
         int tamanho = getSize(postagem);
 
         if (postagem!=null) {
@@ -98,8 +110,8 @@ public class PostListView extends Fragment {
     public void setJson(String json) {
         this.json = json;
     }
-    private void sendRequestPosts(){
-        String  url = String.format("http://sm.c3.unicap.br/portalC3/api/posts?startNum=0");
+    private void sendRequestPosts(int startNum){
+        String  url = String.format("http://sm.c3.unicap.br/portalC3/api/posts?startNum=" + startNum);
 
         StringRequest teste = new StringRequest(Request.Method.GET,url,
                 new Response.Listener<String>() {

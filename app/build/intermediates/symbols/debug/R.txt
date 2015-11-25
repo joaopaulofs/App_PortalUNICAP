@@ -479,8 +479,9 @@ int drawable ic_post 0x7f020045
 int drawable ic_professor 0x7f020046
 int drawable ic_sobre 0x7f020047
 int drawable marcio 0x7f020048
-int drawable notification_template_icon_bg 0x7f02004a
-int drawable robson 0x7f020049
+int drawable no_image_professor 0x7f020049
+int drawable notification_template_icon_bg 0x7f02004b
+int drawable robson 0x7f02004a
 int id action0 0x7f0d0068
 int id action_bar 0x7f0d003e
 int id action_bar_activity_content 0x7f0d0000

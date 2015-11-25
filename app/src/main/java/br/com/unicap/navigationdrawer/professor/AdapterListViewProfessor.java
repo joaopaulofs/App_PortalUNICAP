@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.Serializable;
@@ -75,6 +76,10 @@ public class AdapterListViewProfessor extends BaseAdapter  implements Serializab
         //atravez do layout pego pelo LayoutInflater, pegamos cada id relacionado
         //ao item e definimos as informações.
         ((TextView) view.findViewById(R.id.nome)).setText(item.getUsuarioNome());
+        if(item.getUsuarioFoto() == null || item.getUsuarioFoto().equals("")) {
+            ImageView imagem = (ImageView) view.findViewById(R.id.imagem);
+            ((ImageView) view.findViewById(R.id.imagem)).setImageResource(R.drawable.no_image_professor);
+        }
 //        ImageView imagem = (ImageView) view.findViewById(R.id.imagem);
 //        ((ImageView) view.findViewById(imagem.getId())).setImageResource(item.getUsuarioFoto());
         ((TextView) view.findViewById(R.id.cargo)).setText(item.getUsuarioCargo());
