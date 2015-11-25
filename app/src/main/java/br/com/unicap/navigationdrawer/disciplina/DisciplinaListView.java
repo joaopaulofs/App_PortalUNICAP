@@ -1,9 +1,9 @@
-package br.com.unicap.navigationdrawer.professor;
+package br.com.unicap.navigationdrawer.disciplina;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,19 +21,20 @@ import com.android.volley.toolbox.Volley;
 import java.util.ArrayList;
 
 import br.com.unicap.navigationdrawer.R;
+import br.com.unicap.navigationdrawer.model.Disciplina;
 import br.com.unicap.navigationdrawer.model.Post;
-import br.com.unicap.navigationdrawer.model.Professor;
 import br.com.unicap.navigationdrawer.post.JsonPosts;
 
 /**
- * Created by Joao on 13/09/2015.
+ * Created by Joao on 07/11/2015.
  */
-public class ProfessorListView extends Fragment {
+public class DisciplinaListView extends Fragment {
 
     ListView list;
-    private AdapterListViewProfessor adapterListView;
-    private ArrayList<Professor> itens;
-    private Professor[] professores;
+    private AdapterListViewDisciplina adapterListView;
+    private ArrayList<Disciplina> itens;
+    private Disciplina[] disciplinas = new Disciplina[20];
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -42,12 +43,12 @@ public class ProfessorListView extends Fragment {
 
         list = (ListView) view.findViewById(R.id.list);
 
-        sendRequestProfessores();
+        sendRequestDisciplinas();
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getActivity(), DetailsActivityProfessor.class);
+                Intent intent = new Intent(getActivity(), DetailsActivityDisciplina.class);
                 intent.putExtra("ID", id);
                 intent.putExtra("POSITION", position);
                 intent.putExtra("OBJETO", adapterListView.getItem(position));
@@ -60,35 +61,39 @@ public class ProfessorListView extends Fragment {
 
     private void createListView()
     {
-        itens = new ArrayList<Professor>();
-        int tamanho = getSize(professores);
+        itens = new ArrayList<Disciplina>();
+        int tamanho = getSize(disciplinas);
 
-        if (professores!=null) {
+        if (disciplinas!=null) {
             for (int i = 0; i < tamanho; i++) {
-                Professor item = new Professor(professores[i].getUsuarioMatricula() != null ? professores[i].getUsuarioMatricula() : ""
-                        , professores[i].getUsuarioEmail()!= null ? professores[i].getUsuarioEmail() : ""
-                        , professores[i].getUsuarioCargo()!= null ? professores[i].getUsuarioCargo() : ""
-                        , professores[i].getUsuarioNome()!= null ? professores[i].getUsuarioNome() : "");
+                Disciplina item = new Disciplina(disciplinas[i].getDisciplinaId() != null ? disciplinas[i].getDisciplinaId() : "",
+                        disciplinas[i].getDisciplinaCodigo() != null ? disciplinas[i].getDisciplinaCodigo() : ""
+                        , disciplinas[i].getDisciplinaNome() != null ? disciplinas[i].getDisciplinaNome() : ""
+                        , disciplinas[i].getDisciplinaLinkPlanoAcademico() != null ? disciplinas[i].getDisciplinaLinkPlanoAcademico() : ""
+                        , disciplinas[i].getDisciplinaCreditos() != null ? disciplinas[i].getDisciplinaCreditos() : ""
+                        , disciplinas[i].getDisciplinaCargaHoraria() != null ? disciplinas[i].getDisciplinaCargaHoraria() : ""
+                        , disciplinas[i].getDisciplinaArquivos() != null ? disciplinas[i].getDisciplinaArquivos() : ""
+                        , disciplinas[i].getDisciplinaProfessorNome()!= null ? disciplinas[i].getDisciplinaProfessorNome() : ""
+                        ,disciplinas[i].getDisciplinaProfessorMatricula()!= null ? disciplinas[i].getDisciplinaProfessorMatricula() : ""                );
                 itens.add(item);
             }
         }
-
         //Cria o adapter
-        adapterListView = new AdapterListViewProfessor(this.getActivity(), itens);
+        adapterListView = new AdapterListViewDisciplina(this.getActivity(), itens);
 
         //Define o Adapter
         list.setAdapter(adapterListView);
         //Cor quando a lista é selecionada para rolagem.
-        list.setCacheColorHint(Color.GRAY);
+        list.setCacheColorHint(Color.TRANSPARENT);
     }
-    private void sendRequestProfessores(){
-        String  url = String.format("http://sm.c3.unicap.br/portalC3/api/usuarios?startNum=0&usuarioTipo=1");
-    professores= new Professor[2000];
+    private void sendRequestDisciplinas(){
+        String  url = String.format("http://sm.c3.unicap.br/portalC3/api/disciplinas?startNum=0");
+
         StringRequest teste = new StringRequest(Request.Method.GET,url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        showJSONProfessores(response);
+                        showJSONPosts(response);
 
                     }
                 },
@@ -103,19 +108,19 @@ public class ProfessorListView extends Fragment {
         RequestQueue requestQueue = Volley.newRequestQueue(this.getActivity());
         requestQueue.add(teste);
     }
-    private void showJSONProfessores(String json) {
+    private void showJSONPosts(String json) {
 
-        JsonProfessores pj = new JsonProfessores(json);
+        JsonDisciplinas pj = new JsonDisciplinas(json);
 
-        professores= pj.JsonProfessores();
+        disciplinas= pj.JsonDisciplinas();
         createListView();
     }
 
 
-    public int getSize(Professor[] professores){
+    public int getSize(Disciplina[] disciplinas){
         int tamanho=0;
-        for (int i=0;i<professores.length;i++){
-            if (professores[i]==null)
+        for (int i=0;i<disciplinas.length;i++){
+            if (disciplinas[i]==null)
                 return i;
         }
         return tamanho;

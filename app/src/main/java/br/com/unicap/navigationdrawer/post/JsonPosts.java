@@ -25,26 +25,28 @@ public class JsonPosts {
 
     public Post[] JsonPosts(){
             JSONArray jsonArray = null;
-            JSONObject jsonObject = null;
+
         Post[] postagem;
         postagem = new Post[20];
 
         try {
-                jsonArray = new JSONArray(json);
-                int tamanho = jsonArray.length();
+            JSONObject jsonObject = new JSONObject(json);
+
+            JSONArray jsonresult = jsonObject.getJSONArray("result");
+                int tamanho = jsonresult.length();
 
             for (int i=0;i<tamanho;i++){
                 postagem[i]= new Post();
 
             }
                 for(int i=0;i<tamanho;i++) {
-                    jsonObject = jsonArray.getJSONObject(i);
-                    postagem[i].setPostId(jsonObject.getString("postId"));
-                    postagem[i].setPostTitulo(jsonObject.getString("postTitulo"));
-                    postagem[i].setPostDescricao(jsonObject.getString("postDescricao"));
-                    postagem[i].setPostData(jsonObject.getString("postData"));
-                    postagem[i].setPostAutorNome(jsonObject.getString("postAutorNome"));
-                    postagem[i].setPostAutorMatricula(jsonObject.getString("postAutorMatricula"));
+                    JSONObject post = jsonresult.getJSONObject(i);
+                    postagem[i].setPostId(post.getString("postId"));
+                    postagem[i].setPostTitulo(post.getString("postTitulo"));
+                    postagem[i].setPostDescricao(post.getString("postDescricao"));
+                    postagem[i].setPostData(post.getString("postData"));
+                    postagem[i].setPostAutorNome(post.getString("postAutorNome"));
+                    postagem[i].setPostAutorMatricula(post.getString("postAutorMatricula"));
                     //postagem[i].setPostImage(jsonObject.getString("postImage"));
                 }
             } catch (JSONException e) {

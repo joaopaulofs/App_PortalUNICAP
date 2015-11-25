@@ -1,28 +1,27 @@
-package br.com.unicap.navigationdrawer.professor;
+package br.com.unicap.navigationdrawer.disciplina;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
 import br.com.unicap.navigationdrawer.R;
-import br.com.unicap.navigationdrawer.model.Professor;
+import br.com.unicap.navigationdrawer.model.Disciplina;
 
 /**
  * Created by Joao on 18/10/2015.
  */
-public class AdapterListViewProfessor extends BaseAdapter  implements Serializable
+public class AdapterListViewDisciplina extends BaseAdapter  implements Serializable
 {
     private LayoutInflater mInflater;
-    private ArrayList<Professor> itens;
+    private ArrayList<Disciplina> itens;
 
-    public AdapterListViewProfessor(Context context, ArrayList<Professor> itens)
+    public AdapterListViewDisciplina(Context context, ArrayList<Disciplina> itens)
     {
         //Itens que preencheram o listview
         this.itens = itens;
@@ -30,7 +29,7 @@ public class AdapterListViewProfessor extends BaseAdapter  implements Serializab
         mInflater = LayoutInflater.from(context);
     }
 
-    public AdapterListViewProfessor() {
+    public AdapterListViewDisciplina() {
 
     }
 
@@ -50,7 +49,7 @@ public class AdapterListViewProfessor extends BaseAdapter  implements Serializab
      * @param position
      * @return
      */
-    public Professor getItem(int position)
+    public Disciplina getItem(int position)
     {
         return itens.get(position);
     }
@@ -69,17 +68,17 @@ public class AdapterListViewProfessor extends BaseAdapter  implements Serializab
     public View getView(int position, View view, ViewGroup parent)
     {
         //Pega o item de acordo com a posição.
-        Professor item = itens.get(position);
+        Disciplina item = itens.get(position);
         //infla o layout para podermos preencher os dados
-        view = mInflater.inflate(R.layout.item_listview_professor, null);
+        view = mInflater.inflate(R.layout.item_listview_disciplina, null);
 
         //atravez do layout pego pelo LayoutInflater, pegamos cada id relacionado
         //ao item e definimos as informações.
-        ((TextView) view.findViewById(R.id.nome)).setText(item.getUsuarioNome());
-        ImageView imagem = (ImageView) view.findViewById(R.id.imagem);
-        ((ImageView) view.findViewById(imagem.getId())).setImageResource(R.drawable.perfil_sem_foto);
-       // ((TextView) view.findViewById(R.id.cargo)).setText(item.getUsuarioCargo());
-      //  ((TextView) view.findViewById(R.id.email)).setText(item.getUsuarioEmail());
+        ((TextView) view.findViewById(R.id.nome)).setText(item.getDisciplinaNome());
+//        ImageView imagem = (ImageView) view.findViewById(R.id.imagem);
+//        ((ImageView) view.findViewById(imagem.getId())).setImageResource(item.getUsuarioFoto());
+        ((TextView) view.findViewById(R.id.codigo)).setText(item.getDisciplinaCodigo());
+        ((TextView) view.findViewById(R.id.link)).setText(item.getDisciplinaLinkPlanoAcademico());
 
         return view;
     }

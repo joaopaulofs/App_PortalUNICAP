@@ -10,4 +10,4 @@
         android:text="Tela Postagens"
         android:id="@+id/textView2"
         android:layout_gravity="center_horizontal" />
-</LinearLayout><!-- From: file:/C:/Users/Joao/Downloads/NavigationDrawer/app/src/main/res/layout/post.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Joao/Downloads/NavigationDrawer/app/src/main/res/layout/list_view_maior_espacamento.xmlw_maior_espacamento.xml -->
