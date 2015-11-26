@@ -28,7 +28,11 @@ public class Professor implements Serializable {
         this.usuarioEmail = usuarioEmail;
         this.usuarioMatricula = usuarioMatricula;
     }
+<<<<<<< HEAD
     public Professor(String usuarioNome, String usuarioCargo, String usuarioEmail, String usuarioLattesURL, String usuarioTelefone, String usuarioAreaInteresse, String usuarioPaginaPessoalURL, String usuarioFotoUrl, String usuarioTitulacao, String usuarioMatricula) {
+=======
+    public Professor(String usuarioNome, String usuarioCargo, String usuarioEmail, String usuarioLattesURL, String usuarioTelefone, String usuarioAreaInteresse, String usuarioPaginaPessoalURL, String usuarioFoto, String usuarioTitulacao, String usuarioMatricula) {
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
         this.usuarioNome = usuarioNome;
         this.usuarioCargo = usuarioCargo;
         this.usuarioEmail = usuarioEmail;

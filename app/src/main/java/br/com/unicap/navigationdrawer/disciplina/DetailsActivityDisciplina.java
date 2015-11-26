@@ -33,8 +33,13 @@ public class DetailsActivityDisciplina extends ActionBarActivity {
 //        imagem.setImageResource(item.getUsuarioFoto());
         TextView codigo = ((TextView) findViewById(R.id.codigo));
         codigo.setText(item.getDisciplinaCodigo());
+<<<<<<< HEAD
         //TextView link = ((TextView) findViewById(R.id.link));
         //link.setText(item.getDisciplinaLinkPlanoAcademico());
+=======
+        TextView link = ((TextView) findViewById(R.id.link));
+        link.setText(item.getDisciplinaLinkPlanoAcademico());
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
     }
 
     @Override

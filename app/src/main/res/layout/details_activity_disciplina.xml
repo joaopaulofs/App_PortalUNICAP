@@ -10,14 +10,26 @@
         android:orientation="vertical"
         android:weightSum="1">
 
+<<<<<<< HEAD
+=======
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagem"
+            android:layout_gravity="center_horizontal" />
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/nome"
+<<<<<<< HEAD
             android:layout_gravity="center_horizontal"
             />
+=======
+            android:layout_gravity="center_horizontal" />
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,10 +37,23 @@
             android:textSize="15dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/codigo"
+<<<<<<< HEAD
             android:layout_gravity="center_horizontal"
             android:layout_alignParentLeft="true"
             />
 
 
+=======
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/nliveo_blue_colorAccent"
+            android:id="@+id/link"
+            android:layout_gravity="center_horizontal" />
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
     </LinearLayout>
 </ScrollView>

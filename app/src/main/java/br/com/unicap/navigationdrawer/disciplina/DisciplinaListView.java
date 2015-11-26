@@ -72,9 +72,13 @@ public class DisciplinaListView extends Fragment {
                         , disciplinas[i].getDisciplinaLinkPlanoAcademico() != null ? disciplinas[i].getDisciplinaLinkPlanoAcademico() : ""
                         , disciplinas[i].getDisciplinaCreditos() != null ? disciplinas[i].getDisciplinaCreditos() : ""
                         , disciplinas[i].getDisciplinaCargaHoraria() != null ? disciplinas[i].getDisciplinaCargaHoraria() : ""
+<<<<<<< HEAD
                         , disciplinas[i].getDisciplinaArquivos() != null ? disciplinas[i].getDisciplinaArquivos() : ""
                         , disciplinas[i].getDisciplinaProfessorNome()!= null ? disciplinas[i].getDisciplinaProfessorNome() : ""
                         ,disciplinas[i].getDisciplinaProfessorMatricula()!= null ? disciplinas[i].getDisciplinaProfessorMatricula() : ""                );
+=======
+                        , disciplinas[i].getDisciplinaData() != null ? disciplinas[i].getDisciplinaData() : "");
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
                 itens.add(item);
             }
         }

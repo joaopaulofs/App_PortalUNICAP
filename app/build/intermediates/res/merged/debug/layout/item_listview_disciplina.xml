@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -7,14 +8,33 @@
     android:divider="@color/DisciplinaBack"
     android:orientation="horizontal"
     >
+=======
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
     <LinearLayout android:id="@+id/thumbnail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:divider="@color/nliveo_indigo_colorPrimaryDark"
         android:layout_alignParentLeft="true"
         android:layout_marginRight="5dip">
 
+=======
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/imagem"
+            android:layout_width="80dip"
+            android:layout_height="80dip"/>
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
     </LinearLayout>
 
     <!-- Nome -->
@@ -45,14 +65,26 @@
     <!-- Link -->
     <TextView
         android:id="@+id/link"
+<<<<<<< HEAD
         android:layout_below="@id/codigo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="@color/nliveo_indigo_colorPrimary"
         android:dividerHeight="1dp"
         android:textSize="@dimen/pad_15dp"
+=======
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codigo"
+        android:textColor="@color/nliveo_blue_colorAccent"
+        android:textSize="12dip"
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
         android:layout_marginTop="1dip"
         android:layout_toRightOf="@+id/thumbnail"
         android:gravity="left|center" />
 
+<<<<<<< HEAD
 </RelativeLayout><!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/layout/item_listview_disciplina.xml -->
+=======
+</RelativeLayout><!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/layout/item_listview_disciplina.xml -->
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b

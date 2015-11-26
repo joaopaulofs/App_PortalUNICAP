@@ -55,17 +55,23 @@ public class MainActivity extends AppCompatActivity
         switch (position) {
             case 0:
                 mTitle = getString(R.string.app_name);
+<<<<<<< HEAD
                 getSupportActionBar().setTitle(R.string.title_section1);
                 getSupportActionBar().setSubtitle("");
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.Post)));
+=======
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
                 fragment = new PostListView();
                 break;
             case 1:
                 //Disciplinas
                 mTitle = getString(R.string.title_section2);
+<<<<<<< HEAD
                 getSupportActionBar().setTitle(R.string.title_section2);
                 getSupportActionBar().setSubtitle("");
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.Disciplina)));
+=======
+>>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
                 fragment = new DisciplinaListView();
                 break;
             case 2:

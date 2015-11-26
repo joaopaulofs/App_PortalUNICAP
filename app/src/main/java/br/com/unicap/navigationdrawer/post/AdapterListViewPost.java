@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
@@ -16,11 +17,15 @@ import br.com.unicap.navigationdrawer.R;
 /**
  * Created by Joao on 18/10/2015.
  */
-public class AdapterListViewPost extends BaseAdapter  implements Serializable
+public class AdapterListViewPost extends BaseAdapter  implements Serializable,AbsListView.OnScrollListener
 {
     private LayoutInflater mInflater;
     private ArrayList<Post> itens;
 
+    private int bufferItemCount = 5;
+    private int currentPage = 0;
+    private int itemCount = 0;
+    private boolean isLoading = true;
 
     public AdapterListViewPost(Context context, ArrayList<Post> itens)
     {
@@ -86,5 +91,38 @@ public class AdapterListViewPost extends BaseAdapter  implements Serializable
         ((TextView) view.findViewById(R.id.dadosPost)).setText(item.getPostData());
 
         return view;
+    }
+
+    public AdapterListViewPost(int bufferItemCount) {
+        this.bufferItemCount = bufferItemCount;
+    }
+
+    public void loadMore(int page, int totalItemsCount) {
+
+    }
+
+    @Override
+    public void onScrollStateChanged(AbsListView view, int scrollState) {
+
+    }
+
+    @Override
+    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+        if (totalItemCount < itemCount) {
+            this.itemCount = totalItemCount;
+            if (totalItemCount == 0) {
+                this.isLoading = true; }
+        }
+
+        if (isLoading && (totalItemCount > itemCount)) {
+            isLoading = false;
+            itemCount = totalItemCount;
+            currentPage++;
+        }
+
+        if (!isLoading && (totalItemCount - visibleItemCount)<=(firstVisibleItem + bufferItemCount)) {
+            loadMore(currentPage + 1, totalItemCount);
+            isLoading = true;
+        }
     }
 }

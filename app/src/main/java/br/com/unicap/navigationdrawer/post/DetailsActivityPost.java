@@ -15,7 +15,7 @@ public class DetailsActivityPost extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        System.out.println("Teste");
         setContentView(R.layout.details_activity_post);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
