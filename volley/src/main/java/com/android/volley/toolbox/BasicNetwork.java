@@ -39,6 +39,7 @@ import org.apache.http.HttpStatus;
 import org.apache.http.StatusLine;
 import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.impl.cookie.DateUtils;
+import org.json.JSONException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -131,8 +132,12 @@ public class BasicNetwork implements Network {
                 long requestLifetime = SystemClock.elapsedRealtime() - requestStart;
                 logSlowRequests(requestLifetime, request, responseContents, statusLine);
 
-                if (statusCode < 200 || statusCode > 299) {
+                if (statusCode < 200 && statusCode > 299) {
                     throw new IOException();
+                }
+                if (statusCode >299  && statusCode <503){
+
+                    throw new RuntimeException();
                 }
                 return new NetworkResponse(statusCode, responseContents, responseHeaders, false,
                         SystemClock.elapsedRealtime() - requestStart);

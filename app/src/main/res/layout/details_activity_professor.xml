@@ -8,36 +8,97 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="1">
+        android:layout_marginTop="1dip"
+        android:layout_marginBottom="1dip"
+        android:layout_marginEnd="1dip"
+        android:layout_marginRight="1dip"
+        android:id="@+id/txt">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center" />
 
         <ImageView
             android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:id="@+id/imagem"
-            android:layout_gravity="center_horizontal" />
+            android:layout_height="200dp"
+            android:id="@+id/imagemProfessor"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:adjustViewBounds="true"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text=""
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/nome"
-            android:layout_gravity="center_horizontal" />
+            android:id="@+id/professorBuscaNome"
+            android:layout_gravity="center|top"
+             />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dp"
+            android:id="@+id/professorPaginaPessoal"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/professorTitulacao"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/cargo"
+            android:id="@+id/professorBuscaCargo"
             android:layout_gravity="center_horizontal" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dp"
+            android:id="@+id/professorAreaInteresse"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/nliveo_blue_colorAccent"
-            android:id="@+id/email"
+            android:id="@+id/professorBuscaEmail"
             android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/nliveo_blue_colorAccent"
+            android:id="@+id/professorBuscaMatricula"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/pad_15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/nliveo_blue_colorAccent"
+            android:id="@+id/professorBuscaLattesUrl"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView" />
+
     </LinearLayout>
 </ScrollView>

@@ -12,20 +12,24 @@ public class Disciplina implements Serializable {
     private String disciplinaLinkPlanoAcademico;
     private String disciplinaCreditos;
     private String disciplinaCargaHoraria;
-    private String disciplinaData;
+    private String disciplinaArquivos;
+    private String disciplinaProfessorNome;
+    private String disciplinaProfessorMatricula;
 
     public Disciplina() {
 
     }
 
-    public Disciplina(String disciplinaId, String disciplinaCodigo, String disciplinaNome, String disciplinaLinkPlanoAcademico, String disciplinaCreditos, String disciplinaCargaHoraria, String disciplinaData) {
+    public Disciplina(String disciplinaId, String disciplinaCodigo, String disciplinaNome, String disciplinaLinkPlanoAcademico, String disciplinaCreditos, String disciplinaCargaHoraria, String disciplinaArquivos,String disciplinaProfessorNome,String disciplinaProfessorMatricula) {
         this.disciplinaId = disciplinaId;
         this.disciplinaCodigo = disciplinaCodigo;
         this.disciplinaNome = disciplinaNome;
         this.disciplinaLinkPlanoAcademico = disciplinaLinkPlanoAcademico;
         this.disciplinaCreditos = disciplinaCreditos;
         this.disciplinaCargaHoraria = disciplinaCargaHoraria;
-        this.disciplinaData = disciplinaData;
+        this.disciplinaArquivos = disciplinaArquivos;
+        this.disciplinaProfessorNome=disciplinaProfessorNome;
+        this.disciplinaProfessorMatricula=disciplinaProfessorMatricula;
     }
 
     public String getDisciplinaId() {
@@ -76,11 +80,23 @@ public class Disciplina implements Serializable {
         this.disciplinaCargaHoraria = disciplinaCargaHoraria;
     }
 
-    public String getDisciplinaData() {
-        return disciplinaData;
+    public String getDisciplinaArquivos() {
+        return disciplinaArquivos;
     }
 
-    public void setDisciplinaData(String disciplinaData) {
-        this.disciplinaData = disciplinaData;
+    public void setDisciplinaArquivos(String disciplinaArquivos) {
+        this.disciplinaArquivos = disciplinaArquivos;
+    }
+    public String getDisciplinaProfessorNome(){
+        return disciplinaProfessorNome;
+    }
+    public void setDisciplinaProfessorNome(String disciplinaProfessorNome){
+        this.disciplinaProfessorNome= disciplinaProfessorNome;
+    }
+    public String getDisciplinaProfessorMatricula(){
+        return this.disciplinaProfessorMatricula;
+    }
+    public void setDisciplinaProfessorMatricula(String disciplinaProfessorMatricula){
+        this.disciplinaProfessorMatricula=disciplinaProfessorMatricula;
     }
 }

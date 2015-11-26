@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical"
     android:weightSum="1">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/postTitulo"
-        android:layout_gravity="center_horizontal" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imagePost"
-        android:layout_gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="15dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/infoPost"
-        android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/pad_20dp"
+            android:textStyle="bold"
+            android:id="@+id/postTitulo"
+            android:layout_gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="305dp"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/nliveo_blue_colorAccent"
-        android:id="@+id/dadosPost"
-        android:layout_gravity="right"
-        android:layout_weight="0.05" />
-</LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagePost"
+
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/pad_12dp"
+            android:id="@+id/infoPost"
+            android:layout_gravity="center_horizontal"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/pad_10dp"
+            android:textStyle="italic"
+            android:textColor="@color/PostBack"
+            android:id="@+id/dadosPost"
+            android:layout_gravity="bottom|right"
+             />
+    </LinearLayout>

@@ -82,7 +82,7 @@ public class ProfessorListView extends Fragment {
         list.setCacheColorHint(Color.GRAY);
     }
     private void sendRequestProfessores(){
-        String  url = String.format("http://sm.c3.unicap.br/portalC3/api/usuarios?startNum=0&usuarioTipo=1");
+        String  url = String.format("http://sm.c3.unicap.br/portalC3/api/usuarios?startNum=0&usuarioTipo=2");
     professores= new Professor[2000];
         StringRequest teste = new StringRequest(Request.Method.GET,url,
                 new Response.Listener<String>() {
@@ -96,7 +96,7 @@ public class ProfessorListView extends Fragment {
                     @Override
                     public void onErrorResponse(VolleyError error) {
 
-                        Toast.makeText(getActivity(), error.getMessage(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(),"Erro de Conexão./nServiço Não Disponível" , Toast.LENGTH_LONG).show();
                     }
                 });
 

@@ -78,7 +78,7 @@ public class AdapterListViewDisciplina extends BaseAdapter  implements Serializa
 //        ImageView imagem = (ImageView) view.findViewById(R.id.imagem);
 //        ((ImageView) view.findViewById(imagem.getId())).setImageResource(item.getUsuarioFoto());
         ((TextView) view.findViewById(R.id.codigo)).setText(item.getDisciplinaCodigo());
-        ((TextView) view.findViewById(R.id.link)).setText(item.getDisciplinaLinkPlanoAcademico());
+        //((TextView) view.findViewById(R.id.link)).setText(item.getDisciplinaLinkPlanoAcademico());
 
         return view;
     }

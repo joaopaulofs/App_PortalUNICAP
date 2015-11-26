@@ -6,29 +6,37 @@ import java.io.Serializable;
  * Created by Joao on 18/10/2015.
  */
 public class Professor implements Serializable {
-    private String usuarioNome;
-    private String usuarioCargo;
-    private String usuarioEmail;
-    private String usuarioLattesURL;
-    private String usuarioTelefone;
-    private String usuarioAreaInteresse;
-    private String usuarioPaginaPessoalURL;
-    private String usuarioFoto;
-    private String usuarioTitulacao;
     private String usuarioMatricula;
+    private String usuarioTitulacao;
+    private String usuarioFotoUrl;
+    private String usuarioPaginaPessoalUrl;
+    private String usuarioAreaInteresse;
+    private String usuarioTelefone;
+    private String usuarioLattesUrl;
+    private String usuarioEmail;
+    private String usuarioCargo;
+    private String usuarioNome;
+
+
 
     public Professor(){
     }
 
-    public Professor(String usuarioNome, String usuarioCargo, String usuarioEmail, String usuarioLattesURL, String usuarioTelefone, String usuarioAreaInteresse, String usuarioPaginaPessoalURL, String usuarioFoto, String usuarioTitulacao, String usuarioMatricula) {
+    public Professor(String usuarioMatricula,String usuarioEmail,String usuarioCargo,String usuarioNome ){
         this.usuarioNome = usuarioNome;
         this.usuarioCargo = usuarioCargo;
         this.usuarioEmail = usuarioEmail;
-        this.usuarioLattesURL = usuarioLattesURL;
+        this.usuarioMatricula = usuarioMatricula;
+    }
+    public Professor(String usuarioNome, String usuarioCargo, String usuarioEmail, String usuarioLattesURL, String usuarioTelefone, String usuarioAreaInteresse, String usuarioPaginaPessoalURL, String usuarioFotoUrl, String usuarioTitulacao, String usuarioMatricula) {
+        this.usuarioNome = usuarioNome;
+        this.usuarioCargo = usuarioCargo;
+        this.usuarioEmail = usuarioEmail;
+        this.usuarioLattesUrl = usuarioLattesUrl;
         this.usuarioTelefone = usuarioTelefone;
         this.usuarioAreaInteresse = usuarioAreaInteresse;
-        this.usuarioPaginaPessoalURL = usuarioPaginaPessoalURL;
-        this.usuarioFoto = usuarioFoto;
+        this.usuarioPaginaPessoalUrl = usuarioPaginaPessoalUrl;
+        this.usuarioFotoUrl = usuarioFotoUrl;
         this.usuarioTitulacao = usuarioTitulacao;
         this.usuarioMatricula = usuarioMatricula;
     }
@@ -57,12 +65,12 @@ public class Professor implements Serializable {
         this.usuarioEmail = usuarioEmail;
     }
 
-    public String getUsuarioLattesURL() {
-        return usuarioLattesURL;
+    public String getUsuarioLattesUrl() {
+        return usuarioLattesUrl;
     }
 
-    public void setUsuarioLattesURL(String usuarioLattesURL) {
-        this.usuarioLattesURL = usuarioLattesURL;
+    public void setUsuarioLattesUrl(String usuarioLattesUrl) {
+        this.usuarioLattesUrl = usuarioLattesUrl;
     }
 
     public String getUsuarioTelefone() {
@@ -81,20 +89,20 @@ public class Professor implements Serializable {
         this.usuarioAreaInteresse = usuarioAreaInteresse;
     }
 
-    public String getUsuarioPaginaPessoalURL() {
-        return usuarioPaginaPessoalURL;
+    public String getUsuarioPaginaPessoalUrl() {
+        return usuarioPaginaPessoalUrl;
     }
 
-    public void setUsuarioPaginaPessoalURL(String usuarioPaginaPessoalURL) {
-        this.usuarioPaginaPessoalURL = usuarioPaginaPessoalURL;
+    public void setUsuarioPaginaPessoalUrl(String usuarioPaginaPessoalUrl) {
+        this.usuarioPaginaPessoalUrl = usuarioPaginaPessoalUrl;
     }
 
-    public String getUsuarioFoto() {
-        return usuarioFoto;
+    public String getUsuarioFotoUrl() {
+        return usuarioFotoUrl;
     }
 
-    public void setUsuarioFoto(String usuarioFoto) {
-        this.usuarioFoto = usuarioFoto;
+    public void setUsuarioFotoUrl(String usuarioFotoUrl) {
+        this.usuarioFotoUrl = usuarioFotoUrl;
     }
 
     public String getUsuarioTitulacao() {

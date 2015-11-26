@@ -1,7 +1,9 @@
 package br.com.unicap.navigationdrawer.professor;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,6 +17,8 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.ImageRequest;
+import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -51,7 +55,6 @@ spinner.setVisibility(View.VISIBLE);
 
 
 
-
     }
 
     @Override
@@ -70,6 +73,8 @@ spinner.setVisibility(View.VISIBLE);
 
     private void MostrarProfessor(){
         spinner.setVisibility(View.GONE);
+
+        sendRequestImagemProfessores(professores.getUsuarioFotoUrl());
         TextView nome = ((TextView) findViewById(R.id.professorBuscaNome));
         nome.setText(professores.getUsuarioNome());
         TextView cargo = ((TextView) findViewById(R.id.professorBuscaCargo));
@@ -77,11 +82,11 @@ spinner.setVisibility(View.VISIBLE);
         TextView email = ((TextView) findViewById(R.id.professorBuscaEmail));
         email.setText(professores.getUsuarioEmail());
         TextView lattesurl = ((TextView) findViewById(R.id.professorBuscaLattesUrl));
-        lattesurl.setText(professores.getUsuarioLattesURL());
+        lattesurl.setText(professores.getUsuarioLattesUrl());
         TextView areaInteresse = ((TextView) findViewById(R.id.professorAreaInteresse));
         areaInteresse.setText(professores.getUsuarioAreaInteresse());
         TextView paginaPessoalUrl = ((TextView) findViewById(R.id.professorPaginaPessoal));
-        paginaPessoalUrl.setText(professores.getUsuarioPaginaPessoalURL());
+        paginaPessoalUrl.setText(professores.getUsuarioPaginaPessoalUrl());
         TextView titulacao = ((TextView)findViewById(R.id.professorTitulacao));
         titulacao.setText(professores.getUsuarioTitulacao());
         ImageView imagemProfessor = (ImageView) findViewById(R.id.imagemProfessor);
@@ -90,6 +95,12 @@ spinner.setVisibility(View.VISIBLE);
 
 
 
+
+
+    }
+    private void mostrarImagem(Bitmap response){
+        ImageView imagemProfessor = (ImageView) findViewById(R.id.imagemProfessor);
+        imagemProfessor.setImageBitmap(response);
     }
 
 
@@ -124,6 +135,19 @@ spinner.setVisibility(View.VISIBLE);
         MostrarProfessor();
 
     }
+private void  sendRequestImagemProfessores(String url){
 
+    ImageRequest ir = new ImageRequest(url, new Response.Listener<Bitmap>() {
+
+        @Override
+        public void onResponse(Bitmap response) {
+           mostrarImagem(response);
+
+        }
+    }, 0, 0, null, null);
+    RequestQueue requestQueue = Volley.newRequestQueue(this);
+    requestQueue.add(ir);
+
+}
 
 }

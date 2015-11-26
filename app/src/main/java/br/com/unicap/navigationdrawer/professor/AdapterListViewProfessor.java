@@ -76,8 +76,8 @@ public class AdapterListViewProfessor extends BaseAdapter  implements Serializab
         //atravez do layout pego pelo LayoutInflater, pegamos cada id relacionado
         //ao item e definimos as informações.
         ((TextView) view.findViewById(R.id.nome)).setText(item.getUsuarioNome());
-        ImageView imagem = (ImageView) view.findViewById(R.id.imagem);
-        ((ImageView) view.findViewById(imagem.getId())).setImageResource(R.drawable.perfil_sem_foto);
+        //ImageView imagem = (ImageView) view.findViewById(R.id.imagem);
+        //((ImageView) view.findViewById(imagem.getId())).setImageResource(R.drawable.perfil_sem_foto);
        // ((TextView) view.findViewById(R.id.cargo)).setText(item.getUsuarioCargo());
       //  ((TextView) view.findViewById(R.id.email)).setText(item.getUsuarioEmail());
 

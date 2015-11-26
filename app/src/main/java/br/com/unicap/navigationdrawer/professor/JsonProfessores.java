@@ -1,5 +1,9 @@
 package br.com.unicap.navigationdrawer.professor;
 
+import android.accounts.NetworkErrorException;
+
+import com.android.volley.NetworkError;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -40,17 +44,16 @@ public class JsonProfessores {
                 professores[i].setUsuarioMatricula(professor.getString("usuarioMatricula"));
                 professores[i].setUsuarioEmail(professor.getString("usuarioEmail"));
 
-                if(professor.names().toString().contains("usuarioCargo")) {
                     professores[i].setUsuarioCargo(professor.getString("usuarioCargo"));
-                }
                 if(professor.names().toString().contains("usuarioNome")) {
-                    professores[i].setUsuarioCargo(professor.getString("usuarioNome"));
+                    professores[i].setUsuarioNome(professor.getString("usuarioNome"));
                 }
-                professores[i].setUsuarioNome(jsonObject.getString("usuarioNome"));
 
             }
-        } catch (JSONException e) {
+        } catch (Exception e) {
             e.printStackTrace();
+        }{
+
         }
         return professores;
     }

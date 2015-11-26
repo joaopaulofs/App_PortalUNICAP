@@ -83,4 +83,6 @@ public class Post implements Serializable {
     public void setPostImage(String postImage) {
         this.postImage = postImage;
     }
+
+
 }

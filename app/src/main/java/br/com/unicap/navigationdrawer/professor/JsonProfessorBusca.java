@@ -28,10 +28,11 @@ public class JsonProfessorBusca {
 
                 professores.setUsuarioMatricula(jsonObject.getString("usuarioMatricula"));
                 professores.setUsuarioTitulacao(jsonObject.getString("usuarioTitulacao"));
-                professores.setUsuarioPaginaPessoalURL(jsonObject.getString("usuarioPaginaPessoalURL"));
+                professores.setUsuarioFotoUrl(jsonObject.getString("usuarioFotoUrl"));
+                professores.setUsuarioPaginaPessoalUrl(jsonObject.getString("usuarioPaginaPessoalUrl"));
                 professores.setUsuarioAreaInteresse(jsonObject.getString("usuarioAreaInteresse"));
                 professores.setUsuarioTelefone(jsonObject.getString("usuarioTelefone"));
-                professores.setUsuarioLattesURL(jsonObject.getString("usuarioLattesURL"));
+                professores.setUsuarioLattesUrl(jsonObject.getString("usuarioLattesUrl"));
                 professores.setUsuarioEmail(jsonObject.getString("usuarioEmail"));
                 professores.setUsuarioCargo(jsonObject.getString("usuarioCargo"));
                 professores.setUsuarioNome(jsonObject.getString("usuarioNome"));

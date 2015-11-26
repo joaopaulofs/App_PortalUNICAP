@@ -1,5 +1,6 @@
 package br.com.unicap.navigationdrawer;
 
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
@@ -9,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
 
-import br.com.unicap.navigationdrawer.disciplina.Disciplina;
+import br.com.unicap.navigationdrawer.disciplina.DisciplinaListView;
 import br.com.unicap.navigationdrawer.evento.EventListView;
 import br.com.unicap.navigationdrawer.post.PostListView;
 import br.com.unicap.navigationdrawer.professor.ProfessorListView;
@@ -53,28 +54,42 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         switch (position) {
             case 0:
-                //Postagens
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.app_name);
+                getSupportActionBar().setTitle(R.string.title_section1);
+                getSupportActionBar().setSubtitle("");
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.Post)));
                 fragment = new PostListView();
                 break;
             case 1:
                 //Disciplinas
                 mTitle = getString(R.string.title_section2);
-                fragment = new Disciplina();
+                getSupportActionBar().setTitle(R.string.title_section2);
+                getSupportActionBar().setSubtitle("");
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.Disciplina)));
+                fragment = new DisciplinaListView();
                 break;
             case 2:
                 //Professores
                 mTitle = getString(R.string.title_section3);
+                getSupportActionBar().setTitle("Corpo Docente");
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.Professor)));
+                getSupportActionBar().setSubtitle("Professores");
                 fragment = new ProfessorListView();
                 break;
             case 3:
                 //Eventos
                 mTitle = "Eventos";
+                getSupportActionBar().setTitle(R.string.title_section4);
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.Evento)));
+                getSupportActionBar().setSubtitle("Eventos do Curso");
                 fragment = new EventListView();
                 break;
             case 4:
                 //Sobre
                 mTitle = "Sobre";
+                getSupportActionBar().setTitle("Sobre");
+                getSupportActionBar().setSubtitle("");
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.Sobre)));
                 fragment = new Sobre();
                 break;
         }
@@ -101,16 +116,11 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (!mNavigationDrawerFragment.isDrawerOpen()) {
-            // Only show items in the action bar relevant to this screen
-            // if the drawer is not showing. Otherwise, let the drawer
-            // decide what to show in the action bar.
-            getMenuInflater().inflate(R.menu.main, menu);
-            restoreActionBar();
+
             return true;
         }
-        return super.onCreateOptionsMenu(menu);
-    }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -126,5 +136,7 @@ public class MainActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
 }
