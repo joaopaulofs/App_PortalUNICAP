@@ -55,4 +55,4 @@
         android:layout_toRightOf="@+id/thumbnail"
         android:gravity="left|center" />
 
-</RelativeLayout><!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/layout/item_listview_disciplina.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Joao/Documents/Projetos/App_PortalUNICAP/app/src/main/res/layout/item_listview_disciplina.xml -->

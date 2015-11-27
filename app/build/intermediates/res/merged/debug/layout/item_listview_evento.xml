@@ -37,4 +37,4 @@
         android:id="@+id/dadosEvento"
         android:layout_gravity="right"
         android:layout_weight="0.05" />
-</LinearLayout><!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/layout/item_listview_evento.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Joao/Documents/Projetos/App_PortalUNICAP/app/src/main/res/layout/item_listview_evento.xml -->
