@@ -39,27 +39,18 @@ public class JsonDisciplinas {
         JSONArray jsonArray = null;
         JSONObject jsonObject = null;
         Disciplina[] disciplinas;
-<<<<<<< HEAD
         disciplinas = new Disciplina[200];
 
         try {
             jsonObject = new JSONObject(json);
             JSONArray jsonresult = jsonObject.getJSONArray("result");
             int tamanho = jsonresult.length();
-=======
-        disciplinas = new Disciplina[20];
-
-        try {
-            jsonArray = new JSONArray(json);
-            int tamanho = jsonArray.length();
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
             for (int i=0;i<tamanho;i++){
                 disciplinas[i]= new Disciplina();
 
             }
             for(int i=0;i<tamanho;i++) {
-<<<<<<< HEAD
                 JSONObject disciplina = jsonresult.getJSONObject(i);
                 disciplinas[i].setDisciplinaId(disciplina.getString("disciplinaId"));
                 disciplinas[i].setDisciplinaCodigo(disciplina.getString("disciplinaCodigo"));
@@ -70,16 +61,6 @@ public class JsonDisciplinas {
                 disciplinas[i].setDisciplinaArquivos(disciplina.getString("disciplinaArquivos"));
                 disciplinas[i].setDisciplinaProfessorNome(disciplina.getString("disciplinaProfessorNome"));
                 disciplinas[i].setDisciplinaProfessorMatricula(disciplina.getString("disciplinaProfessorMatricula"));
-=======
-                jsonObject = jsonArray.getJSONObject(i);
-                disciplinas[i].setDisciplinaId(jsonObject.getString("disciplinaId"));
-                disciplinas[i].setDisciplinaCodigo(jsonObject.getString("disciplinaCodigo"));
-                disciplinas[i].setDisciplinaNome(jsonObject.getString("disciplinaNome"));
-                disciplinas[i].setDisciplinaLinkPlanoAcademico(jsonObject.getString("disciplinaLinkPlanoAcademico"));
-                disciplinas[i].setDisciplinaCreditos(jsonObject.getString("disciplinaCreditos"));
-                disciplinas[i].setDisciplinaCargaHoraria(jsonObject.getString("disciplinaCargaHoraria"));
-                disciplinas[i].setDisciplinaData(jsonObject.getString("disciplinaData"));
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
             }
         } catch (JSONException e) {
             e.printStackTrace();

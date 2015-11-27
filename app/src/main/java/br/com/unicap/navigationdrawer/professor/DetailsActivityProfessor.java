@@ -5,15 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
-<<<<<<< HEAD
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
-=======
-import android.widget.LinearLayout;
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,17 +17,12 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-<<<<<<< HEAD
 import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.w3c.dom.Text;
-=======
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
 import br.com.unicap.navigationdrawer.R;
 import br.com.unicap.navigationdrawer.model.Professor;
@@ -41,10 +32,7 @@ import br.com.unicap.navigationdrawer.model.Professor;
  */
 public class DetailsActivityProfessor extends ActionBarActivity {
     Professor professores = new Professor();
-<<<<<<< HEAD
     private ProgressBar spinner;
-=======
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,10 +42,7 @@ public class DetailsActivityProfessor extends ActionBarActivity {
         spinner = ((ProgressBar) findViewById(R.id.progressBar));
 
 
-<<<<<<< HEAD
 spinner.setVisibility(View.VISIBLE);
-=======
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Aqui você utiliza o ID do item(caso tenha) para pesquisar no banco de dados ou a position para pesquisar na list de origem
@@ -69,10 +54,6 @@ spinner.setVisibility(View.VISIBLE);
         sendRequestBuscaProfessores(item.getUsuarioMatricula());
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
     }
 
@@ -91,12 +72,9 @@ spinner.setVisibility(View.VISIBLE);
     }
 
     private void MostrarProfessor(){
-<<<<<<< HEAD
         spinner.setVisibility(View.GONE);
 
         sendRequestImagemProfessores(professores.getUsuarioFotoUrl());
-=======
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
         TextView nome = ((TextView) findViewById(R.id.professorBuscaNome));
         nome.setText(professores.getUsuarioNome());
         TextView cargo = ((TextView) findViewById(R.id.professorBuscaCargo));
@@ -104,7 +82,6 @@ spinner.setVisibility(View.VISIBLE);
         TextView email = ((TextView) findViewById(R.id.professorBuscaEmail));
         email.setText(professores.getUsuarioEmail());
         TextView lattesurl = ((TextView) findViewById(R.id.professorBuscaLattesUrl));
-<<<<<<< HEAD
         lattesurl.setText(professores.getUsuarioLattesUrl());
         TextView areaInteresse = ((TextView) findViewById(R.id.professorAreaInteresse));
         areaInteresse.setText(professores.getUsuarioAreaInteresse());
@@ -126,14 +103,6 @@ spinner.setVisibility(View.VISIBLE);
         imagemProfessor.setImageBitmap(response);
     }
 
-=======
-        lattesurl.setText(professores.getUsuarioLattesURL());
-        TextView matricula = ((TextView) findViewById(R.id.professorBuscaMatricula));
-        matricula.setText(professores.getUsuarioMatricula());
-
-
-    }
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
     private void sendRequestBuscaProfessores(String matricula){
         String  url = String.format("http://sm.c3.unicap.br/portalC3/api/usuarios/");
@@ -166,7 +135,6 @@ spinner.setVisibility(View.VISIBLE);
         MostrarProfessor();
 
     }
-<<<<<<< HEAD
 private void  sendRequestImagemProfessores(String url){
 
     ImageRequest ir = new ImageRequest(url, new Response.Listener<Bitmap>() {
@@ -181,8 +149,5 @@ private void  sendRequestImagemProfessores(String url){
     requestQueue.add(ir);
 
 }
-=======
-
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
 }

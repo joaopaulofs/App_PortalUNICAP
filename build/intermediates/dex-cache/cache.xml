@@ -2,44 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jar="C:\Users\Derick\Documents\App_PortalUNICAP\app\build\intermediates\exploded-aar\App_PortalUNICAP\volley\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-<<<<<<< HEAD
         sha1="75837d9981fa1dd56ad6d4b27c8893706d262f90">
         <dex dex="C:\Users\Derick\Documents\App_PortalUNICAP\app\build\intermediates\pre-dexed\debug\classes-947b9af73f95acff4e611b7e797315f2115c3393.jar" />
-=======
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\pre-dexed\debug\classes-9df70d3b50e9e2771a314455223ba6fd3f04a4a1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\exploded-aar\NavigationDrawer\volley\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="61c326329880b774effd76fb577250fe48fe0137">
-        <dex dex="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\pre-dexed\debug\classes-11e340e4ee970ef0c36020b42f500d68b79549da.jar" />
-    </item>
-    <item
-        jar="C:\Users\Joao\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-413dcaf5dfe546c40aa29c56766a0ed249490c17.jar" />
-    </item>
-    <item
-        jar="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-5e582dfdddf9549d436a379b9b35c205e02d168d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\Users\Joao\Desktop\NavigationDrawer\app\build\intermediates\pre-dexed\debug\classes-a3fb0aab909d313f7451bd4b75be6fe4d50ac4bb.jar" />
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
     </item>
 
 </items>

@@ -23,8 +23,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 import br.com.unicap.navigationdrawer.MainActivity;
 import br.com.unicap.navigationdrawer.evento.AdapterListViewEvento;
@@ -38,11 +36,7 @@ public class PostListView extends Fragment {
 
     ListView list;
     private AdapterListViewPost adapterListView;
-<<<<<<< HEAD
     private ArrayList<Post> itens;
-=======
-    private ArrayList<Post> itens = new ArrayList<Post>();
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
     private Post[] postagem = new Post[20];
     private JSONArray posts = null;
@@ -56,11 +50,7 @@ public class PostListView extends Fragment {
         View view = inflater.inflate(R.layout.list_view_maior_espacamento, container, false);
 
         list = (ListView) view.findViewById(R.id.list);
-<<<<<<< HEAD
         sendRequestPosts();
-=======
-        sendRequestPosts(0);
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
         //createListView();
 
@@ -75,26 +65,12 @@ public class PostListView extends Fragment {
             }
         });
 
-        list.setOnScrollListener(new AdapterListViewPost() {
-            @Override
-            public void loadMore(int page, int totalItemsCount) {
-//                list = loader.loadData();
-//                dataList.addAll(newData);
-//                adapter.notifyDataSetChanged();
-                sendRequestPosts(totalItemsCount);
-            }
-
-        });
-
         return view;
     }
 
     private void createListView() {
 
-<<<<<<< HEAD
         itens = new ArrayList<Post>();
-=======
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
         int tamanho = getSize(postagem);
 
         if (postagem!=null) {
@@ -122,13 +98,8 @@ public class PostListView extends Fragment {
     public void setJson(String json) {
         this.json = json;
     }
-<<<<<<< HEAD
     private void sendRequestPosts(){
         String  url = String.format("http://sm.c3.unicap.br/portalC3/api/posts?startNum=0");
-=======
-    private void sendRequestPosts(int startNum){
-        String  url = String.format("http://sm.c3.unicap.br/portalC3/api/posts?startNum=" + startNum);
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
 
         StringRequest teste = new StringRequest(Request.Method.GET,url,
                 new Response.Listener<String>() {
@@ -142,11 +113,7 @@ public class PostListView extends Fragment {
                     @Override
                     public void onErrorResponse(VolleyError error) {
 
-<<<<<<< HEAD
                         Toast.makeText(getActivity(),"Erro de Conexão./nServiço Não Disponível", Toast.LENGTH_LONG).show();
-=======
-                        Toast.makeText(getActivity(), error.getMessage(), Toast.LENGTH_LONG).show();
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
                     }
                 });
 

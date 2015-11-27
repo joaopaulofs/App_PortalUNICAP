@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:weightSum="1">
 
-<<<<<<< HEAD
 
 
         <TextView
@@ -43,37 +42,3 @@
             android:layout_gravity="bottom|right"
              />
     </LinearLayout><!-- From: file:/C:/Users/Derick/Documents/App_PortalUNICAP/app/src/main/res/layout/item_listview_post.xml -->
-=======
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/postTitulo"
-        android:layout_gravity="center_horizontal" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imagePost"
-        android:layout_gravity="center_horizontal" />
-
-    <TextView
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="15dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/infoPost"
-        android:layout_gravity="center_horizontal" />
-
-    <TextView
-        android:layout_width="305dp"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/nliveo_blue_colorAccent"
-        android:id="@+id/dadosPost"
-        android:layout_gravity="right"
-        android:layout_weight="0.05" />
-</LinearLayout><!-- From: file:/C:/Users/Joao/Desktop/NavigationDrawer/app/src/main/res/layout/item_listview_post.xml -->
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b

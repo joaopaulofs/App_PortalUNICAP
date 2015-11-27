@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-<<<<<<< HEAD
         android:layout_marginTop="1dip"
         android:layout_marginBottom="1dip"
         android:layout_marginEnd="1dip"
@@ -58,15 +57,6 @@
             android:text=""
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/professorBuscaCargo"
-=======
-        android:weightSum="1"
-        android:id="@+id/txt">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imagem"
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
             android:layout_gravity="center_horizontal" />
 
 
@@ -81,25 +71,6 @@
             android:layout_height="wrap_content"
             android:text=""
             android:textAppearance="?android:attr/textAppearanceLarge"
-<<<<<<< HEAD
-=======
-            android:id="@+id/professorBuscaNome"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/professorBuscaCargo"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
->>>>>>> f936e96312af008d8a8a3ff18212b2bc9ab99d2b
             android:textColor="@color/nliveo_blue_colorAccent"
             android:id="@+id/professorBuscaEmail"
             android:layout_gravity="center_horizontal" />
